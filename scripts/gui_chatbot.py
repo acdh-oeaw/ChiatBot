@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 model = load_model('chatbot_model.h5')
 import json
 import random
-intents = json.loads(open('intents.json').read())
+intents = json.loads(open('chia_intents.json').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
 
@@ -82,7 +82,7 @@ def send():
  
 
 root = Tk()
-root.title("Chatbot")
+root.title("Chiatbot")
 root.geometry("400x500")
 root.resizable(width=FALSE, height=FALSE)
 

@@ -15,7 +15,7 @@ words = []
 classes = []
 documents = []
 ignore_letters = ['!', '?', ',', '.']
-intents_file = open('intents.json').read()
+intents_file = open('chia_intents.json').read()
 intents = json.loads(intents_file)
 
 for intent in intents['intents']:
