@@ -1,17 +1,19 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-
 from tensorflow.keras.models import load_model
-model = load_model('chatbot_model.h5')
 import json
 import random
+import tkinter
+from tkinter import *
+
+lemmatizer = WordNetLemmatizer()
+model = load_model('chatbot_model.h5')
+
 intents = json.loads(open('chia_intents.json').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
-
 
 def clean_up_sentence(sentence):
     # tokenize the pattern - splitting words into array
@@ -60,8 +62,6 @@ def getResponse(ints, intents_json):
 
 
 #Creating tkinter GUI
-import tkinter
-from tkinter import *
 
 def send():
     msg = EntryBox.get("1.0",'end-1c').strip()
