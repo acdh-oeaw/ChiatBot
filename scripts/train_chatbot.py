@@ -60,7 +60,7 @@ for doc in documents:
     for word in words:
         bag.append(1) if word in pattern_words else bag.append(0)
 
-    # output is a '0' for each tag and '1' for current tag (for each pattern)
+    # output is a '0' for each tag and '1' for curresudo apt-get install python3-tknt tag (for each pattern)
     output_row = list(output_empty)
     output_row[classes.index(doc[1])] = 1
 
