@@ -36,27 +36,23 @@
     "context": [""]
   },
   {"tag": "Scenario1",
-    "patterns": ["Can you show me images with grapes?",
-      "Show me images with grapes that are appealing.",
-      "I am looking for still life images with grapes.",
-      "Show me pictures with grapes that are not appealing."],
-    "responses": ["Images with grapes? Sure! Would you like appealing or non-appealing images?"],
+    "patterns": ["Can you show me images or paintings with grapes?",
+      "I am looking for still life images with grapes."],
+    "responses": ["Images with grapes? There you go!", "Images with grapes? Sure!"],
     "context": [""]
   },
   {"tag": "Scenario2",
-    "patterns": ["Show me paintings that contain lemons.",
-      "Can you show me photos that have apples?"],
-
-    "responses": ["Photos with apples? There you go!"],
+    "patterns": ["Can you show me images or paintings with lemons?",
+      "I am looking for still life images with lemons."],
+    "responses": ["Images with lemons? There you go!", "Images with lemons? Sure!"],
     "context": [""]
   },
   {"tag": "Scenario3",
-    "patterns": ["Can you show me photos with apples from Ireland?",
-      "Show me a still life with fruit.",
-      "Find artwork with fruit.",
-      "Find paintings from the 19th century with fruit." ],
-    "responses": ["Painting from the 19th century with fruit? Here they are!",
-      "Photos with apples from Ireland? Here they are?"],
+    "patterns": ["Can you show me images or paintings from Ireland?",
+      "I am looking for still life images from Ireland.",
+      "Show me pictures from Ireland."],
+    "responses": ["Painting from Ireland? Here they are!",
+      "Images from Ireland? Here they are?"],
     "context": [""]
   }]
 }
